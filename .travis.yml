@@ -6,4 +6,4 @@ before_install:
     - docker build -t yasir1983:docker-ci-playground -f Dockerfile.dev .
 
 script:
-    - docker run -e CI=true yasir1983:docker npm run test
+    - docker run -e CI=true yasir1983:docker-ci-playground npm run test
